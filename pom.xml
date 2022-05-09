@@ -231,7 +231,11 @@
     </dependencyManagement>
 
    <modules>
-
+       <module>smart-cloud-boot</module>
+       <module>smart-cloud-common</module>
+       <module>smart-cloud-component</module>
+       <module>smart-cloud-framework</module>
+       <module>smart-cloud-middleware</module>
    </modules>
     <repositories>
         <repository>
