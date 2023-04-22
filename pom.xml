@@ -236,6 +236,9 @@
        <module>smart-cloud-component</module>
        <module>smart-cloud-framework</module>
        <module>smart-cloud-middleware</module>
+       <module>smart-cloud-authentication</module>
+       <module>smart-cloud-authorization</module>
+       <module>smart-cloud-certification</module>
    </modules>
     <repositories>
         <repository>
