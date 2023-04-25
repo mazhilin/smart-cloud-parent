@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smart.cloud.boot.config.EnableJacksonAutoConfiguration,\
+  com.smart.cloud.boot.holder.SpringContextHolder,\
+  com.smart.cloud.boot.config.EnableRestTemplateAutoConfiguration,\
+  com.smart.cloud.boot.config.EnableCaffeineCacheAutoConfiguration,\
+  com.smart.cloud.boot.config.EnableMethodValidatorAutoConfiguration,\
+  com.smart.cloud.boot.extension.AppRuntimeEnvironment
