@@ -29,7 +29,18 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>smart-cloud-security</module>
+    </modules>
+
     <build>
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

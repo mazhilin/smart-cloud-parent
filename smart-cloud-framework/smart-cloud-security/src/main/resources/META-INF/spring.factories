@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smart.cloud.security.config.EnableSecurityAutoConfiguration,\
+  com.smart.cloud.security.config.EnableJsonWebTokenAutoConfiguration

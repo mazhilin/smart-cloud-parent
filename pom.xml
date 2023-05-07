@@ -193,6 +193,12 @@
 
             <dependency>
                 <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-security</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
                 <artifactId>smart-cloud-redisson</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
@@ -349,7 +355,7 @@
                     <fork>true</fork>
                     <mainClass>${start-class}</mainClass>
                     <layout>ZIP</layout>
-                 <!--   <classifier>${project.version}</classifier>-->
+                    <classifier>${project.version}</classifier>
                     <executable>false</executable>
                     <excludeDevtools>false</excludeDevtools>
                 </configuration>
