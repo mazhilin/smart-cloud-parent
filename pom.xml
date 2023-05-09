@@ -143,6 +143,60 @@
                 <version>${smart-cloud.version}</version>
             </dependency>
 
+            <!--smart-cloud-kafka依赖配置-->
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-kafka-common</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-kafka-producer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-kafka-consumer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <!--smart-cloud-redismq依赖配置-->
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-redismq-common</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-redismq-producer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-redismq-consumer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <!--smart-cloud-rocketmq依赖配置-->
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-rocketmq-common</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-rocketmq-producer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-rocketmq-consumer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.smart.cloud</groupId>
                 <artifactId>smart-cloud-extension</artifactId>

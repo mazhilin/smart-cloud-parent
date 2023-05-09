@@ -50,11 +50,6 @@
             <artifactId>jjwt-jackson</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- 引入 Spring Security 的依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
         <!-- 引入 Shiro 的依赖 -->
         <dependency>
             <groupId>org.apache.shiro</groupId>

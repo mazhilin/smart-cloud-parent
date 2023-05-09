@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+/*import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;*/
 
 /**
  * @className: com.smart.cloud.security.config.EnableSecurityAutoConfiguration
@@ -40,11 +40,13 @@ public class EnableSecurityAutoConfiguration {
         this.shiroConfig = shiroConfig;
     }
 
+/*
     @Bean
     @ConditionalOnMissingBean
     public WebSecurityConfigurerAdapter webSecurityConfigurerAdapter() {
         return securityConfig.webSecurityConfig();
     }
+*/
 
     @Bean
     @ConditionalOnMissingBean

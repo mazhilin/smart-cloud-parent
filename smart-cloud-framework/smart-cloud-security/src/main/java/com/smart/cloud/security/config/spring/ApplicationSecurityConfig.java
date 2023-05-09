@@ -1,15 +1,15 @@
 package com.smart.cloud.security.config.spring;
 
 import com.smart.cloud.security.properties.SmartCloudSecurityProperties;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+/*import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;*/
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Bean;
+/*import org.springframework.context.annotation.Bean;*/
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+/*import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;*/
 
 /**
  * @className: com.smart.cloud.security.config.springsecurity.SpringSecurityConfig
@@ -24,7 +24,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Configuration
-@ConditionalOnClass({WebSecurityConfigurerAdapter.class})
+//@ConditionalOnClass({WebSecurityConfigurerAdapter.class})
 @EnableConfigurationProperties(SmartCloudSecurityProperties.class)
 public class ApplicationSecurityConfig {
     private final SmartCloudSecurityProperties securityProperties;
@@ -34,13 +34,13 @@ public class ApplicationSecurityConfig {
         this.securityProperties = securityProperties;
     }
 
-    @Bean
+/*    @Bean
     @ConditionalOnMissingBean
     public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    }
+    }*/
 
-    @Bean
+/*    @Bean
     @ConditionalOnMissingBean
     public WebSecurityConfigurerAdapter webSecurityConfig() {
         return new WebSecurityConfigurerAdapter() {
@@ -68,5 +68,5 @@ public class ApplicationSecurityConfig {
                 }
             }
         };
-    }
+    }*/
 }

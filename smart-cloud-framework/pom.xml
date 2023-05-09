@@ -31,6 +31,7 @@
 
     <modules>
         <module>smart-cloud-security</module>
+        <module>smart-cloud-scheduled</module>
     </modules>
 
     <build>

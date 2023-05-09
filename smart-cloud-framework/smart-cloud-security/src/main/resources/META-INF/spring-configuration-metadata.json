@@ -4,6 +4,11 @@
       "name": "smart.cloud.jwt",
       "type": "com.smart.cloud.security.properties.SmartCloudTokenProperties",
       "sourceType": "com.smart.cloud.security.properties.SmartCloudTokenProperties"
+    },
+    {
+      "name": "smart.cloud.security",
+      "type": "com.smart.cloud.security.properties.SmartCloudSecurityProperties",
+      "sourceType": "com.smart.cloud.security.properties.SmartCloudSecurityProperties"
     }
   ],
   "properties": [
