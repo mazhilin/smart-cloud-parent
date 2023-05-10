@@ -197,6 +197,25 @@
                 <version>${smart-cloud.version}</version>
             </dependency>
 
+            <!--smart-cloud-pulsar依赖配置-->
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-pulsar-common</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-pulsar-producer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-pulsar-consumer</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+
             <dependency>
                 <groupId>com.smart.cloud</groupId>
                 <artifactId>smart-cloud-extension</artifactId>

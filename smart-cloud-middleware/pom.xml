@@ -41,6 +41,7 @@
         <module>smart-cloud-redismq</module>
         <module>smart-cloud-rocketmq</module>
         <module>smart-cloud-kafka</module>
+        <module>smart-cloud-pulsar</module>
     </modules>
 
 </project>
