@@ -4,15 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-framework</artifactId>
+        <artifactId>smart-cloud-rabbitmq</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-scheduled</artifactId>
+    <artifactId>smart-cloud-rabbitmq-producer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-scheduled</name>
+    <name>smart-cloud-rabbitmq-producer</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +59,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.rocketmq.SmartCloudRocketmqApplication</mainClass>
+                    <mainClass>com.smart.cloud.rabbitmq.producer.SmartCloudRabbitmqProducerApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

@@ -2,17 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-framework</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-scheduled</artifactId>
+    <artifactId>smart-cloud-resources-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-scheduled</name>
+    <name>smart-cloud-resources-client</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +54,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.rocketmq.SmartCloudRocketmqApplication</mainClass>
+                    <mainClass>com.smart.cloud.resources.client.SmartCloudResourcesClientApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

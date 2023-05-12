@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-parent</artifactId>
+        <artifactId>smart-cloud-integration</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-framework</artifactId>
+    <artifactId>smart-cloud-authentication</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-framework</name>
+    <name>smart-cloud-authentication</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>8</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -30,19 +30,12 @@
     </dependencies>
 
     <modules>
-        <module>smart-cloud-mysql</module>
-        <module>smart-cloud-security</module>
-        <module>smart-cloud-scheduled</module>
+        <module>smart-cloud-authentication-common</module>
+        <module>smart-cloud-authentication-server</module>
+        <module>smart-cloud-authentication-client</module>
     </modules>
 
     <build>
-        <finalName>${project.name}</finalName>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

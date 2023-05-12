@@ -12,6 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>smart-cloud-rabbitmq</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>pom</packaging>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -27,6 +28,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <modules>
+        <module>smart-cloud-rabbitmq-common</module>
+        <module>smart-cloud-rabbitmq-producer</module>
+        <module>smart-cloud-rabbitmq-consumer</module>
+    </modules>
 
     <build>
         <plugins>

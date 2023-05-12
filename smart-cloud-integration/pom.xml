@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-framework</artifactId>
+        <artifactId>smart-cloud-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-scheduled</artifactId>
+    <artifactId>smart-cloud-integration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-scheduled</name>
+    <name>smart-cloud-integration</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
     <properties>
@@ -43,34 +43,28 @@
         </dependencies>
     </dependencyManagement>
 
+    <modules>
+        <module>smart-cloud-authorization</module>
+        <module>smart-cloud-authentication</module>
+        <module>smart-cloud-identification</module>
+        <module>smart-cloud-permission</module>
+        <module>smart-cloud-resources</module>
+    </modules>
+
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.rocketmq.SmartCloudRocketmqApplication</mainClass>
-                    <skip>true</skip>
+                    <fork>true</fork>
+                    <mainClass>${start-class}</mainClass>
+                    <layout>ZIP</layout>
+                    <!--         <classifier>${project.version}</classifier>-->
+                    <executable>false</executable>
+                    <excludeDevtools>false</excludeDevtools>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
