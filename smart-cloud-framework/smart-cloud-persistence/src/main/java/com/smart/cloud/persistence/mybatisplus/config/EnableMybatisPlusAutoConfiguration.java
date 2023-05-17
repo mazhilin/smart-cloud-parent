@@ -1,5 +1,11 @@
 package com.smart.cloud.persistence.mybatisplus.config;
 
+import com.baomidou.mybatisplus.core.MybatisConfiguration;
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
 import com.smart.cloud.persistence.mybatisplus.handler.MybatisMetaObjectHandler;
 import com.smart.cloud.persistence.mybatisplus.resolver.SqlFilterArgumentResolver;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
@@ -40,5 +46,24 @@ public class EnableMybatisPlusAutoConfiguration implements WebMvcConfigurer {
     @Bean
     public MybatisMetaObjectHandler metaObjectHandler() {
         return new MybatisMetaObjectHandler();
+    }
+
+    @Bean
+    public MybatisSqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
+        MybatisSqlSessionFactoryBean sqlSessionFactoryBean = new MybatisSqlSessionFactoryBean();
+        sqlSessionFactoryBean.setDataSource(dataSource);
+        MybatisConfiguration configuration = new MybatisConfiguration();
+        sqlSessionFactoryBean.setConfiguration(configuration);
+        return sqlSessionFactoryBean;
+    }
+
+
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor() {
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
+        interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        interceptor.addInnerInterceptor(new BlockAttackInnerInterceptor());
+        return interceptor;
     }
 }
