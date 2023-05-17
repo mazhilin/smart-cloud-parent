@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-mysql</artifactId>
+    <artifactId>smart-cloud-elasticsearch</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-mysql</name>
+    <name>smart-cloud-elasticsearch</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
     <properties>
@@ -29,32 +29,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.smart.cloud</groupId>
-            <artifactId>smart-cloud-boot</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -86,7 +60,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.mysql.SmartCloudMysqlApplication</mainClass>
+                    <mainClass>com.smart.cloud.elasticsearch.SmartCloudElasticsearchApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

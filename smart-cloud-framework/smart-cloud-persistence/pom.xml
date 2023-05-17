@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-mysql</artifactId>
+    <artifactId>smart-cloud-persistence</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-mysql</name>
+    <name>smart-cloud-persistence</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
     <properties>
@@ -20,41 +20,35 @@
         <spring-boot.version>2.6.13</spring-boot.version>
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>com.smart.cloud</groupId>
+            <artifactId>smart-cloud-boot</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <!-- Spring Boot Data JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--mybatis plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+        </dependency>
+        <!--Spring Boot  JDBC Template-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.smart.cloud</groupId>
-            <artifactId>smart-cloud-boot</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -86,7 +80,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.mysql.SmartCloudMysqlApplication</mainClass>
+                    <mainClass>com.smart.cloud.persistence.SmartCloudPersistenceApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

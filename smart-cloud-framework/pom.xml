@@ -30,9 +30,12 @@
     </dependencies>
 
     <modules>
+        <module>smart-cloud-elasticsearch</module>
+        <module>smart-cloud-persistence</module>
         <module>smart-cloud-mysql</module>
         <module>smart-cloud-security</module>
         <module>smart-cloud-scheduled</module>
+        <module>smart-cloud-redisson</module>
     </modules>
 
     <build>
