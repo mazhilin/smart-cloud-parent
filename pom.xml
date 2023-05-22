@@ -316,7 +316,12 @@
        <module>smart-cloud-framework</module>
        <module>smart-cloud-middleware</module>
        <module>smart-cloud-integration</module>
+       <module>smart-cloud-starter</module>
+       <module>smart-cloud-toolkit</module>
    </modules>
+
+
+
     <repositories>
         <repository>
             <id>central</id>
