@@ -1,0 +1,31 @@
+{
+  "groups": [
+    {
+      "name": "smart.cloud.datasource" ,
+      "type": "com.smart.cloud.datasource.boot.properties.SmartCloudDatasourceProperties" ,
+      "sourceType": "com.smart.cloud.datasource.boot.properties.SmartCloudDatasourceProperties"
+    }
+  ] ,
+  "properties": [
+    {
+      "name": "smart.cloud.datasource.driver-class-name" ,
+      "type": "java.lang.String" ,
+      "description": "Description for smart.cloud.datasource.driver-class-name."
+    } ,
+    {
+      "name": "smart.cloud.datasource.url" ,
+      "type": "java.lang.String" ,
+      "description": "Description for smart.cloud.datasource.url."
+    } ,
+    {
+      "name": "smart.cloud.datasource.password" ,
+      "type": "java.lang.String" ,
+      "description": "Description for smart.cloud.datasource.password."
+    } ,
+    {
+      "name": "smart.cloud.datasource.username" ,
+      "type": "java.lang.String" ,
+      "description": "Description for smart.cloud.datasource.username."
+    }
+  ]
+}
