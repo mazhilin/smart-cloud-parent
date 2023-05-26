@@ -2,6 +2,7 @@ package com.smart.cloud.mysql.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @className: com.smart.cloud.mysql.properties.SmartCloudMysqlProperties
@@ -16,6 +17,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Data
+@Component
 @ConfigurationProperties("smart.cloud.mysql")
 public class SmartCloudMysqlProperties {
 }
