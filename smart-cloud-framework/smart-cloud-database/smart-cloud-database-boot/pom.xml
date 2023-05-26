@@ -4,18 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-parent</artifactId>
+        <artifactId>smart-cloud-database</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-framework</artifactId>
+    <artifactId>smart-cloud-database-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-framework</name>
+    <name>smart-cloud-database-boot</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -29,30 +27,7 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>smart-cloud-application</module>
-        <module>smart-cloud-database</module>
-        <module>smart-cloud-datacache</module>
-        <module>smart-cloud-datasource</module>
-        <module>smart-cloud-elasticsearch</module>
-        <module>smart-cloud-oauth</module>
-        <module>smart-cloud-persistence</module>
-        <module>smart-cloud-protocol</module>
-        <module>smart-cloud-provenance</module>
-        <module>smart-cloud-mysql</module>
-        <module>smart-cloud-security</module>
-        <module>smart-cloud-scheduled</module>
-        <module>smart-cloud-redisson</module>
-    </modules>
-
     <build>
-        <finalName>${project.name}</finalName>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
