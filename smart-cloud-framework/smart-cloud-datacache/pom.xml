@@ -29,6 +29,7 @@
 
     <modules>
         <module>smart-cloud-datacache-boot</module>
+        <module>smart-cloud-datacache-redis</module>
     </modules>
 
     <build>
