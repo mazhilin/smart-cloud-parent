@@ -126,6 +126,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>smart-cloud-security-boot</module>
+        <module>smart-cloud-security-spring</module>
+        <module>smart-cloud-security-shiro</module>
+    </modules>
+
     <build>
         <finalName>${project.name}</finalName>
         <resources>
