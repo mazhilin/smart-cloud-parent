@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-parent</artifactId>
+        <artifactId>smart-cloud-toolkit</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-toolkit</artifactId>
+    <artifactId>smart-cloud-java-sdk</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-toolkit</name>
+    <name>smart-cloud-java-sdk</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
@@ -28,7 +28,7 @@
     </dependencies>
 
     <modules>
-        <module>smart-cloud-java-sdk</module>
+        <module>smart-cloud-java-sdk-boot</module>
     </modules>
 
     <build>
