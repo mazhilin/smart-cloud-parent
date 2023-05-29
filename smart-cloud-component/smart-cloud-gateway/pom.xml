@@ -29,6 +29,10 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>smart-cloud-gateway-boot</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
