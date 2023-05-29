@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-datasource-hikaricp</artifactId>
+    <artifactId>smart-cloud-datasource-hikari</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-datasource-hikaricp</name>
+    <name>smart-cloud-datasource-hikari</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 

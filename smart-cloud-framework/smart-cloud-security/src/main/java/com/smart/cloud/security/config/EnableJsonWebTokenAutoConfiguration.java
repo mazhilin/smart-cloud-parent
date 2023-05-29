@@ -3,6 +3,7 @@ package com.smart.cloud.security.config;
 import com.smart.cloud.security.properties.SmartCloudTokenProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -20,6 +21,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @RequiredArgsConstructor
+@EnableConfigurationProperties(value = SmartCloudTokenProperties.class)
 public class EnableJsonWebTokenAutoConfiguration {
 
     private final SmartCloudTokenProperties tokenProperties;

@@ -20,8 +20,9 @@ import javax.sql.DataSource;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
+
 @Data
-@Component
+@EqualsAndHashCode(callSuper = true)
 @ConfigurationProperties(prefix = "smart.cloud.datasource")
 public class SmartCloudDatasourceProperties extends DataSourceProperties {
 

@@ -3,6 +3,7 @@ package com.smart.cloud.datasource.boot.configuration;
 import com.smart.cloud.datasource.boot.properties.SmartCloudDatasourceProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * @className: com.smart.cloud.datasource.boot.configuration.EnableDatasourceAutoConfiguration
@@ -17,6 +18,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
  * @copyright: Copyright © 2018-2023 SamrtCloud Systems Incorporated. All rights reserved.
  */
 @EnableAutoConfiguration
+@EnableConfigurationProperties(value = SmartCloudDatasourceProperties.class)
 public class EnableDatasourceAutoConfiguration {
 
     @Autowired
