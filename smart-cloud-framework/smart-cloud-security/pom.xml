@@ -13,9 +13,8 @@
     <name>smart-cloud-security</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-    <properties>
 
-    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
