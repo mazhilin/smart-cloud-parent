@@ -31,6 +31,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -46,6 +50,9 @@
 
     <modules>
         <module>smart-cloud-scheduled-boot</module>
+        <module>smart-cloud-scheduled-xxljob</module>
+        <module>smart-cloud-scheduled-quartzjob</module>
+        <module>smart-cloud-scheduled-elasticjob</module>
     </modules>
 
     <build>

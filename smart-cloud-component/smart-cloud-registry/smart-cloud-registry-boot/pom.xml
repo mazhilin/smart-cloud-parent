@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-scheduled</artifactId>
+        <artifactId>smart-cloud-registry</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-scheduled-boot</artifactId>
+    <artifactId>smart-cloud-registry-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-scheduled-boot</name>
+    <name>smart-cloud-registry-boot</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 

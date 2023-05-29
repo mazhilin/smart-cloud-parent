@@ -67,7 +67,7 @@
     <modules>
         <module>smart-cloud-datasource-boot</module>
         <module>smart-cloud-datasource-druid</module>
-        <module>smart-cloud-datasource-hikaricp</module>
+        <module>smart-cloud-datasource-hikari</module>
     </modules>
 
     <build>

@@ -29,6 +29,11 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>smart-cloud-gateway</module>
+        <module>smart-cloud-registry</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>

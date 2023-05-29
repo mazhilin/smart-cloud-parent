@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-scheduled-boot</artifactId>
+    <artifactId>smart-cloud-scheduled-quartzjob</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-scheduled-boot</name>
+    <name>smart-cloud-scheduled-quartzjob</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 
