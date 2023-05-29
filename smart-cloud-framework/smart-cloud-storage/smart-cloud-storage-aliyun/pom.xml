@@ -4,16 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-gateway</artifactId>
+        <artifactId>smart-cloud-storage</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-gateway-sapisix</artifactId>
+    <artifactId>smart-cloud-storage-aliyun</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-gateway-sapisix</name>
+    <name>smart-cloud-storage-aliyun</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>jar</packaging>
-
+    <properties>
+        <java.version>17</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
