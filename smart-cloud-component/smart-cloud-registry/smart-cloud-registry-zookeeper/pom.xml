@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-registry-eureka</artifactId>
+    <artifactId>smart-cloud-registry-zookeeper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-registry-eureka</name>
+    <name>smart-cloud-registry-zookeeper</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 

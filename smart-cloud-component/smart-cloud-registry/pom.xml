@@ -33,15 +33,7 @@
         <module>smart-cloud-registry-boot</module>
         <module>smart-cloud-registry-eureka</module>
         <module>smart-cloud-registry-nacos</module>
+        <module>smart-cloud-registry-zookeeper</module>
     </modules>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

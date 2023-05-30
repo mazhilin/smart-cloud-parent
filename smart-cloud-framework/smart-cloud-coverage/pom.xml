@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-registry</artifactId>
+        <artifactId>smart-cloud-framework</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-registry-eureka</artifactId>
+    <artifactId>smart-cloud-coverage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-registry-eureka</name>
+    <name>smart-cloud-coverage</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
@@ -27,6 +27,13 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>smart-cloud-coverage-boot</module>
+        <module>smart-cloud-coverage-audit</module>
+        <module>smart-cloud-coverage-feign</module>
+        <module>smart-cloud-coverage-logger</module>
+        <module>smart-cloud-coverage-socket</module>
+    </modules>
 
 
 </project>
