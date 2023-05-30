@@ -25,6 +25,7 @@ import java.util.Optional;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @RequiredArgsConstructor
+@SuppressWarnings({"ALL"})
 public class ApplicationAuditEventHandler implements ApplicationCompareHandler {
     protected final Optional<ApplicationAuditHandler> optional;
     /**
