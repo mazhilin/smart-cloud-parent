@@ -12,7 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>smart-cloud-persistence</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

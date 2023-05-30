@@ -4,15 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-common</artifactId>
+        <artifactId>smart-cloud-component</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-common-center</artifactId>
+    <artifactId>smart-cloud-monitor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-common-center</name>
+    <name>smart-cloud-monitor</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.smart.cloud.persistence.datajpa.config.EnableDataJpaAutoConfiguration,\
-  com.smart.cloud.persistence.jdbctemplate.config.EnableJdbcTemplateAutoConfiguration,\
-  com.smart.cloud.persistence.mybatisplus.config.EnableMybatisPlusAutoConfiguration

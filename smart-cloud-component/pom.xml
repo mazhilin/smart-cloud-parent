@@ -32,6 +32,7 @@
     <modules>
         <module>smart-cloud-gateway</module>
         <module>smart-cloud-registry</module>
+        <module>smart-cloud-monitor</module>
     </modules>
 
     <build>
