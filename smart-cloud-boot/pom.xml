@@ -156,6 +156,12 @@
             <artifactId>jcache</artifactId>
         </dependency>
 
+        <!-- 对象对比工具-->
+        <dependency>
+            <groupId>org.javers</groupId>
+            <artifactId>javers-core</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
