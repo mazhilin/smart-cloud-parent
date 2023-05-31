@@ -5,6 +5,8 @@ import com.smart.cloud.common.domain.Request;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
+import java.util.Date;
+
 /**
  * @className: com.smart.cloud.common.domain.base.request.BaseRequest
  * @title: 封装SmartCloud项目-BaseRequest类
@@ -23,6 +25,8 @@ import lombok.*;
 @EqualsAndHashCode(callSuper = true)
 public class BaseRequest extends BaseObject implements Request {
     private static final long serialVersionUID = 1687334092703056863L;
+
+    private Long id;
 
     /**
      * 版本号
@@ -55,4 +59,29 @@ public class BaseRequest extends BaseObject implements Request {
     @Setter
     @ApiModelProperty(value = "版本号")
     private Integer version;
+
+    /**
+     * 创建人
+     */
+    private String createdBy;
+
+    /**
+     * 创建时间
+     */
+    private Date createdTime;
+
+    /**
+     * 更新人
+     */
+    private String updatedBy;
+
+    /**
+     * 更新时间
+     */
+    private Date updatedTime;
+
+    /**
+     * 备注
+     */
+    private String remark;
 }
