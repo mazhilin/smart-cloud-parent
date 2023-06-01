@@ -155,7 +155,6 @@
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>jcache</artifactId>
         </dependency>
-
         <!-- 对象对比工具-->
         <dependency>
             <groupId>org.javers</groupId>
