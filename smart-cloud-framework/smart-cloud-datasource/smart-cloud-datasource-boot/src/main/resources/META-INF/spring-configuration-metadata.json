@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "smart.cloud.datasource" ,
-      "type": "com.smart.cloud.datasource.boot.properties.SmartCloudDatasourceProperties" ,
-      "sourceType": "com.smart.cloud.datasource.boot.properties.SmartCloudDatasourceProperties"
+      "type": "com.smart.cloud.datasource.boot.properties.DatasourceProperties" ,
+      "sourceType": "com.smart.cloud.datasource.boot.properties.DatasourceProperties"
     }
   ] ,
   "properties": [
