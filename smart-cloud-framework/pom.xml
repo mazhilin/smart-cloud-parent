@@ -32,7 +32,6 @@
     <modules>
         <module>smart-cloud-application</module>
         <module>smart-cloud-coverage</module>
-        <module>smart-cloud-database</module>
         <module>smart-cloud-datacache</module>
         <module>smart-cloud-datasource</module>
         <module>smart-cloud-oauth</module>
@@ -40,7 +39,6 @@
         <module>smart-cloud-protection</module>
         <module>smart-cloud-protocol</module>
         <module>smart-cloud-provenance</module>
-        <module>smart-cloud-mysql</module>
         <module>smart-cloud-scheduled</module>
         <module>smart-cloud-security</module>
         <module>smart-cloud-specification</module>
