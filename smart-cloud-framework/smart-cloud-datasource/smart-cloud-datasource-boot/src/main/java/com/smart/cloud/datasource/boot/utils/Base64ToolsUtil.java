@@ -12,7 +12,7 @@ package com.smart.cloud.datasource.boot.utils;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SamrtCloud Systems Incorporated. All rights reserved.
  */
-public class Base64 {
+public class Base64ToolsUtil {
     /**
      * This array is a lookup table that translates 6-bit positive integer index values into their "Base64 Alphabet" equivalents as specified
      * in Table 1 of RFC 2045.

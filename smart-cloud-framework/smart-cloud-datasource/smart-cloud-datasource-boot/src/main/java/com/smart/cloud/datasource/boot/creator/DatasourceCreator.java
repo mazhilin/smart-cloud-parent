@@ -1,4 +1,4 @@
-package com.smart.cloud.datasource.boot.builder;
+package com.smart.cloud.datasource.boot.creator;
 
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 
@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public interface DatasourceCreatorBuilder {
+public interface DatasourceCreator {
     /**
      * 通过属性创建数据源
      *

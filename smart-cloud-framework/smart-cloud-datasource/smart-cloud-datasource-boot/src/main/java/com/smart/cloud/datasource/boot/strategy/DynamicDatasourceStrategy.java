@@ -20,10 +20,10 @@ public interface DynamicDatasourceStrategy {
     /**
      * determine a database from the given dataSources
      *
-     * @param dsNames
+     * @param identifiers
      *         given dataSources
      *
      * @return final dataSource
      */
-    String determineKey(List<String> dsNames);
+    String definiteDatasource(List<String> identifiers);
 }

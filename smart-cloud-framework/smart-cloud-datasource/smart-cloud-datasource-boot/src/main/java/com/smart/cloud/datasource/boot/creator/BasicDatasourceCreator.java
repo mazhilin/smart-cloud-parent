@@ -1,6 +1,6 @@
-package com.smart.cloud.datasource.boot.builder;
+package com.smart.cloud.datasource.boot.creator;
 
-import com.smart.cloud.datasource.boot.exception.DynamicDatasourceException;
+import com.smart.cloud.datasource.boot.exception.DatasourceException;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
-public class BasicDatasourceCreatorBuilder implements DatasourceCreatorBuilder {
+public class BasicDatasourceCreator implements DatasourceCreator {
     private static Method createMethod;
     private static Method typeMethod;
     private static Method urlMethod;
@@ -77,7 +77,7 @@ public class BasicDatasourceCreatorBuilder implements DatasourceCreatorBuilder {
             Object o6 = driverClassNameMethod.invoke(o5, properties.getDriverClassName());
             return (DataSource) buildMethod.invoke(o6);
         } catch (Exception e) {
-            throw new DynamicDatasourceException(
+            throw new DatasourceException(
                     "dynamic-datasource create basic database named " + properties.getPoolName() + " error");
         }
     }

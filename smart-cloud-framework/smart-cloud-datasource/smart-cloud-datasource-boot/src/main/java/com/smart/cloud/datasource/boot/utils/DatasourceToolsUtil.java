@@ -9,18 +9,18 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @className: com.smart.cloud.datasource.boot.utils.DynamicConfigToolUtil
- * @title: 封装SmartCloud项目-DynamicConfigToolUtil类
+ * @className: com.smart.cloud.datasource.boot.utils.DatasourceToolsUtil
+ * @title: 封装SmartCloud项目-DatasourceToolsUtil类
  * @description: <p>
- *         SmartCloud项目-DynamicConfigToolUtil
+ *         SmartCloud项目-DatasourceToolsUtil
  *         </p>
- * @content: DynamicConfigToolUtil
+ * @content: DatasourceToolsUtil
  * @author: Powered by marklin
  * @datetime: 2023-06-02 02:01
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class DynamicConfigToolUtil {
+public class DatasourceToolsUtil {
     private static final Pattern LINE_PATTERN = Pattern.compile("-(\\w)");
 
     /**
