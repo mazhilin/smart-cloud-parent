@@ -4,16 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-framework</artifactId>
+        <artifactId>smart-cloud-application</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-application</artifactId>
+    <artifactId>smart-cloud-application-identity</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-application</name>
+    <name>smart-cloud-application-identity</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+    <properties>
 
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,13 +28,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-application-boot</module>
-        <module>smart-cloud-application-identity</module>
-        <module>smart-cloud-application-management</module>
-        <module>smart-cloud-application-protocol</module>
-    </modules>
 
     <build>
         <plugins>
