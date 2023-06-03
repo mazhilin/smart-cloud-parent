@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-identification</artifactId>
+        <artifactId>smart-cloud-kafka</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-identification-common</artifactId>
+    <artifactId>smart-cloud-kafka-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-identification-common</name>
+    <name>smart-cloud-kafka-boot</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -59,7 +59,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.identification.common.SmartCloudIdentificationCommonApplication</mainClass>
+                    <mainClass>com.smart.cloud.kafka.common.SmartCloudKafkaCommonApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

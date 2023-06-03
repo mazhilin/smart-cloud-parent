@@ -9,9 +9,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-redismq-common</artifactId>
+    <artifactId>smart-cloud-redismq-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-redismq-common</name>
+    <name>smart-cloud-redismq-boot</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

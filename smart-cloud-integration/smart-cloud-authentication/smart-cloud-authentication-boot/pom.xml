@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-authentication-common</artifactId>
+    <artifactId>smart-cloud-authentication-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-authentication-common</name>
+    <name>smart-cloud-authentication-boot</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>

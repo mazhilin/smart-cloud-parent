@@ -45,7 +45,7 @@
 
     <modules>
         <module>smart-cloud-resources-client</module>
-        <module>smart-cloud-resources-common</module>
+        <module>smart-cloud-resources-boot</module>
         <module>smart-cloud-resources-server</module>
     </modules>
 

@@ -2,11 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.smart.cloud</groupId>
+        <artifactId>smart-cloud-dubbo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-resources-common</artifactId>
+    <artifactId>smart-cloud-dubbo-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-resources-common</name>
+    <name>smart-cloud-dubbo-boot</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +29,29 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-monitor-default</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+            <version>4.8.102</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -54,7 +83,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.smart.cloud.resources.common.SmartCloudResourcesCommonApplication</mainClass>
+                    <mainClass>${start-class}</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

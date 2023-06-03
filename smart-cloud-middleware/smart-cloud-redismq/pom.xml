@@ -31,7 +31,7 @@
 
 
     <modules>
-        <module>smart-cloud-redismq-common</module>
+        <module>smart-cloud-redismq-boot</module>
         <module>smart-cloud-redismq-producer</module>
         <module>smart-cloud-redismq-consumer</module>
     </modules>
