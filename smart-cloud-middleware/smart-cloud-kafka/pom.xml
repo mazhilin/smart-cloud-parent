@@ -44,7 +44,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>smart-cloud-kafka-common</module>
+        <module>smart-cloud-kafka-boot</module>
         <module>smart-cloud-kafka-producer</module>
         <module>smart-cloud-kafka-consumer</module>
     </modules>

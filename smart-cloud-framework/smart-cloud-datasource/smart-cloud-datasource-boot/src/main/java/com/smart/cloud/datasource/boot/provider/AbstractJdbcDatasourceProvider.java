@@ -1,10 +1,6 @@
 package com.smart.cloud.datasource.boot.provider;
-
-
-
-
-import com.coocaa.cloud.datasource.boot.creator.DefaultDatasourceCreator;
-import com.coocaa.cloud.datasource.boot.properties.DatasourceProperties;
+import com.smart.cloud.datasource.boot.creator.DefaultDatasourceCreator;
+import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
 
@@ -16,16 +12,16 @@ import java.sql.Statement;
 import java.util.Map;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.provider.AbstractJdbcDatasourceProvider
- * @projectName: CoocaaCloud
+ * @packageName com.smart.cloud.datasource.boot.provider.AbstractJdbcDatasourceProvider
+ * @projectName: SmartCloud
  * @className: AbstractJdbcDatasourceProvider
- * @title: 封装CoocaaCloud项目-AbstractJdbcDatasourceProvider类
+ * @title: 封装SmartCloud项目-AbstractJdbcDatasourceProvider类
  * @content: AbstractJdbcDatasourceProvider
- * @description: CoocaaCloud项目-AbstractJdbcDatasourceProvider类,主要用作AbstractJdbcDatasourceProvider。
+ * @description: SmartCloud项目-AbstractJdbcDatasourceProvider类,主要用作AbstractJdbcDatasourceProvider。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 14:10
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public abstract class AbstractJdbcDatasourceProvider extends AbstractDatasourceProvider implements DynamicDatasourceProvider {

@@ -44,7 +44,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>smart-cloud-pulsar-common</module>
+        <module>smart-cloud-pulsar-boot</module>
         <module>smart-cloud-pulsar-producer</module>
         <module>smart-cloud-pulsar-consumer</module>
     </modules>

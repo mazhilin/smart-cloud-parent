@@ -125,6 +125,13 @@
                 <artifactId>smart-cloud-common-web</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-datasource-boot</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
             <!--smart-cloud-dubbo依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
@@ -212,96 +219,6 @@
             <dependency>
                 <groupId>com.smart.cloud</groupId>
                 <artifactId>smart-cloud-pulsar-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-extension</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-integration</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-scheduled</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-logger</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-mysql</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-mybatis</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-payment</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redis</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-security</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redisson</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-sso依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-common</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-server</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-client</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-shiro</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-oauth</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
 

@@ -69,7 +69,6 @@
     <modules>
         <module>smart-cloud-persistence-boot</module>
         <module>smart-cloud-persistence-datajpa</module>
-        <module>smart-cloud-persistence-jdbc</module>
         <module>smart-cloud-persistence-mybatis</module>
     </modules>
 

@@ -30,7 +30,7 @@
     </dependencies>
 
     <modules>
-        <module>smart-cloud-authentication-common</module>
+        <module>smart-cloud-authentication-boot</module>
         <module>smart-cloud-authentication-server</module>
         <module>smart-cloud-authentication-client</module>
     </modules>

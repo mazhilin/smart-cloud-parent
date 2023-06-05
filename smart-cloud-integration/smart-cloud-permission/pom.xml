@@ -44,8 +44,8 @@
     </dependencyManagement>
 
     <modules>
+        <module>smart-cloud-permission-boot</module>
         <module>smart-cloud-permission-client</module>
-        <module>smart-cloud-permission-common</module>
         <module>smart-cloud-permission-server</module>
     </modules>
 

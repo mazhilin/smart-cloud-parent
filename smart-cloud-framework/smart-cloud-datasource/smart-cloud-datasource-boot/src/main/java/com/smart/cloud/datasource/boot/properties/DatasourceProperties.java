@@ -80,16 +80,6 @@ public class DatasourceProperties {
      * HikariCp参数配置
      */
     private HikaricpConfig hikari = new HikaricpConfig();
-
-    /**
-     * BeeCp参数配置
-     */
-    private BeecpConfig beecp = new BeecpConfig();
-    /**
-     * DBCP2参数配置
-     */
-    private Dbcp2Config dbcp2 = new Dbcp2Config();
-
     /**
      * 解密公匙(如果未设置默认使用全局的)
      */

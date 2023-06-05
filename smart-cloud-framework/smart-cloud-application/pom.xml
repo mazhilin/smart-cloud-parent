@@ -29,6 +29,9 @@
 
     <modules>
         <module>smart-cloud-application-boot</module>
+        <module>smart-cloud-application-identity</module>
+        <module>smart-cloud-application-management</module>
+        <module>smart-cloud-application-protocol</module>
     </modules>
 
     <build>

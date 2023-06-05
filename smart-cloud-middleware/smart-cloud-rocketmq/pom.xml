@@ -44,7 +44,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>smart-cloud-rocketmq-common</module>
+        <module>smart-cloud-rocketmq-boot</module>
         <module>smart-cloud-rocketmq-producer</module>
         <module>smart-cloud-rocketmq-consumer</module>
     </modules>

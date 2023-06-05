@@ -30,7 +30,7 @@ public class DynamicDatasourceHeaderProcessor extends DynamicDatasourceProcessor
     }
 
     @Override
-    public String doDetermineDatasource(MethodInvocation invocation, String key) {
+    public String finalize(MethodInvocation invocation, String key) {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         return request.getHeader(key.substring(8));
     }

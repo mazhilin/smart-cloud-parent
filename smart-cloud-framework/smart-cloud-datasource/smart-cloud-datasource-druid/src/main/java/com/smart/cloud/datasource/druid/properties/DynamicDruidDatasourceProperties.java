@@ -1,8 +1,21 @@
 package com.smart.cloud.datasource.druid.properties;
 
-import com.smart.cloud.datasource.druid.config.DruidConfig;
+import cn.hutool.crypto.SecureUtil;
+import com.smart.cloud.datasource.boot.config.DruidConfig;
+import com.smart.cloud.datasource.boot.constants.SeataMode;
+import com.smart.cloud.datasource.boot.properties.DatasourceAopProperties;
+import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
+import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy;
+import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceStrategy;
+import com.smart.cloud.datasource.boot.utils.SecretCryptoUtil;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * @className: com.smart.cloud.datasource.druid.properties.SmartCloudDruidDatasourceProperties
@@ -16,7 +29,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-@Data
+@Slf4j
+@Getter
+@Setter
 @ConfigurationProperties(prefix = DynamicDruidDatasourceProperties.PREFIX)
 public class DynamicDruidDatasourceProperties {
     /**
@@ -47,7 +62,27 @@ public class DynamicDruidDatasourceProperties {
      */
     private Boolean lazy = false;
     /**
+     * seata使用模式，默认AT
+     */
+    private SeataMode seataMode = SeataMode.AT;
+    /**
+     * 全局默认publicKey
+     */
+    private String publicKey = SecretCryptoUtil.DEFAULT_PUBLIC_KEY_STRING;
+
+    /**
+     * 每一个数据源
+     */
+    private Map<String, DatasourceProperties> datasource = new LinkedHashMap<>();
+    /**
+     * 多数据源选择算法clazz，默认负载均衡算法
+     */
+    private Class<? extends DynamicDatasourceStrategy> strategy = DynamicDatasourceLoadBalanceStrategy.class;
+
+    /**
      *  Druid数据库连接池-属性配置
      */
-    private DruidConfig druid = new DruidConfig();
+    private DruidConfig poolConfig = new DruidConfig();
+
+    private DatasourceAopProperties aop =new DatasourceAopProperties();
 }

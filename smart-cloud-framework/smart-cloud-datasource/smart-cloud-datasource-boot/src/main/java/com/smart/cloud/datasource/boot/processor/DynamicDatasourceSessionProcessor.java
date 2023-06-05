@@ -30,7 +30,7 @@ public class DynamicDatasourceSessionProcessor extends DynamicDatasourceProcesso
     }
 
     @Override
-    public String doDetermineDatasource(MethodInvocation invocation, String key) {
+    public String finalize(MethodInvocation invocation, String key) {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         return request.getSession().getAttribute(key.substring(9)).toString();
     }

@@ -30,7 +30,7 @@
     </dependencies>
 
     <modules>
-        <module>smart-cloud-rabbitmq-common</module>
+        <module>smart-cloud-rabbitmq-boot</module>
         <module>smart-cloud-rabbitmq-producer</module>
         <module>smart-cloud-rabbitmq-consumer</module>
     </modules>

@@ -20,7 +20,7 @@
 
 
     <modules>
-        <module>smart-cloud-dubbo-common</module>
+        <module>smart-cloud-dubbo-boot</module>
         <module>smart-cloud-dubbo-provider</module>
         <module>smart-cloud-dubbo-consumer</module>
     </modules>

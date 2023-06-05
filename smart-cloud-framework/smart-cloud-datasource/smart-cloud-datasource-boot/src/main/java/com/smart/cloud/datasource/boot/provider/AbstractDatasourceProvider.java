@@ -6,6 +6,7 @@ import com.smart.cloud.datasource.boot.creator.DefaultDatasourceCreator;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.sql.DataSource;
 import java.util.HashMap;
@@ -24,9 +25,13 @@ import java.util.Map;
  * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
-@AllArgsConstructor
 public abstract class AbstractDatasourceProvider implements DynamicDatasourceProvider {
-    private final DefaultDatasourceCreator defaultDataSourceCreator;
+
+    private  DefaultDatasourceCreator defaultDataSourceCreator;
+
+    public AbstractDatasourceProvider(DefaultDatasourceCreator defaultDataSourceCreator) {
+        this.defaultDataSourceCreator = defaultDataSourceCreator;
+    }
 
     protected Map<String, DataSource> createDataSourceMap(Map<String, DatasourceProperties> datasourcePropertiesMap) {
         Map<String, DataSource> dataSourceMap = new HashMap<>(datasourcePropertiesMap.size() * 2);

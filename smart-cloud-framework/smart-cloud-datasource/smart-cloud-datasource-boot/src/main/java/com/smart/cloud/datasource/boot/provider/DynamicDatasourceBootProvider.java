@@ -1,6 +1,5 @@
 package com.smart.cloud.datasource.boot.provider;
 
-
 import com.smart.cloud.datasource.boot.creator.DefaultDatasourceCreator;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
@@ -28,9 +27,8 @@ public class DynamicDatasourceBootProvider extends AbstractDatasourceProvider{
      */
     private final Map<String, DatasourceProperties> propertiesConfigMap;
 
-    public DynamicDatasourceBootProvider(DefaultDatasourceCreator datasourceCreator, Map<String,
-            DatasourceProperties> propertiesConfigMap) {
-        super(datasourceCreator);
+    public DynamicDatasourceBootProvider(DefaultDatasourceCreator defaultDataSourceCreator, Map<String, DatasourceProperties> propertiesConfigMap) {
+        super(defaultDataSourceCreator);
         this.propertiesConfigMap = propertiesConfigMap;
     }
 

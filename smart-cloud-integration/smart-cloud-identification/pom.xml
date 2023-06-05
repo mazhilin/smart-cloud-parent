@@ -44,8 +44,8 @@
     </dependencyManagement>
 
     <modules>
+        <module>smart-cloud-identification-boot</module>
         <module>smart-cloud-identification-client</module>
-        <module>smart-cloud-identification-common</module>
         <module>smart-cloud-identification-server</module>
     </modules>
 
