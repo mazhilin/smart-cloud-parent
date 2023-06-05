@@ -3,6 +3,7 @@ package com.smart.cloud.datasource.druid.properties;
 import cn.hutool.crypto.SecureUtil;
 import com.smart.cloud.datasource.boot.config.DruidConfig;
 import com.smart.cloud.datasource.boot.constants.SeataMode;
+import com.smart.cloud.datasource.boot.properties.DatasourceAopProperties;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy;
 import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceStrategy;
@@ -82,4 +83,6 @@ public class DynamicDruidDatasourceProperties {
      *  Druid数据库连接池-属性配置
      */
     private DruidConfig poolConfig = new DruidConfig();
+
+    private DatasourceAopProperties aop =new DatasourceAopProperties();
 }

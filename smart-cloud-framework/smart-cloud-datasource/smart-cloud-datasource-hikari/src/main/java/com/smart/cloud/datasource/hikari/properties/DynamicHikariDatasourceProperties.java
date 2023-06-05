@@ -3,6 +3,7 @@ package com.smart.cloud.datasource.hikari.properties;
 import com.smart.cloud.datasource.boot.config.DruidConfig;
 import com.smart.cloud.datasource.boot.config.HikaricpConfig;
 import com.smart.cloud.datasource.boot.constants.SeataMode;
+import com.smart.cloud.datasource.boot.properties.DatasourceAopProperties;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
 import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy;
 import com.smart.cloud.datasource.boot.strategy.DynamicDatasourceStrategy;
@@ -74,4 +75,6 @@ public class DynamicHikariDatasourceProperties {
      *  Druid数据库连接池-属性配置
      */
     private HikaricpConfig poolConfig = new HikaricpConfig();
+
+    private DatasourceAopProperties aop =new DatasourceAopProperties();
 }
