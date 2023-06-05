@@ -67,7 +67,7 @@ public class DruidDatasourceCreatorAutoConfig {
     @Order(DRUID_ORDER)
     @ConditionalOnClass(DruidDataSource.class)
     public DruidDatasourceCreator druidDataSourceCreator() {
-        return new DruidDatasourceCreator(properties.getDruid());
+        return new DruidDatasourceCreator(properties.getPoolConfig());
     }
 
 }

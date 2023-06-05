@@ -19,6 +19,16 @@
             <groupId>com.smart.cloud</groupId>
             <artifactId>smart-cloud-boot</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.smart.cloud</groupId>
+            <artifactId>smart-cloud-datasource-boot</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikaricp.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -53,13 +53,17 @@ public class DynamicRoutingSwitchDatasource extends AbstractDynamicDatasource im
   private Class<? extends DynamicDatasourceStrategy> strategy =
       DynamicDatasourceLoadBalanceStrategy.class;
 
-  @Setter private String primary = DatasourceGroup.MASTER;
+  @Setter
+  private String primary = DatasourceGroup.MASTER;
 
-  @Setter private Boolean strict = false;
+  @Setter
+  private Boolean strict = false;
 
-  @Setter private Boolean p6spy = false;
+  @Setter
+  private Boolean p6spy = false;
 
-  @Setter private Boolean seata = false;
+  @Setter
+  private Boolean seata = false;
 
   @Override
   protected DataSource defineDatasource() {

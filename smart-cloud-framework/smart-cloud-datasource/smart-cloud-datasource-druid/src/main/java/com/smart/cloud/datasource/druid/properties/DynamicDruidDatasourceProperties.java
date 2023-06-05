@@ -81,5 +81,5 @@ public class DynamicDruidDatasourceProperties {
     /**
      *  Druid数据库连接池-属性配置
      */
-    private DruidConfig druid = new DruidConfig();
+    private DruidConfig poolConfig = new DruidConfig();
 }

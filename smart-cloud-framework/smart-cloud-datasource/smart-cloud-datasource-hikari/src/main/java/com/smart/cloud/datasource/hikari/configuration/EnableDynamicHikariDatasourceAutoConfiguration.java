@@ -1,9 +1,19 @@
 package com.smart.cloud.datasource.hikari.configuration;
 
+import com.smart.cloud.datasource.boot.dynamic.DynamicRoutingSwitchDatasource;
+import com.smart.cloud.datasource.hikari.config.HikariDatasourceAspectAutoConfig;
+import com.smart.cloud.datasource.hikari.config.HikariDatasourceAssistAutoConfig;
+import com.smart.cloud.datasource.hikari.config.HikariDatasourceCreatorAutoConfig;
 import com.smart.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+import javax.sql.DataSource;
 
 /**
  * @className: com.smart.cloud.datasource.hikari.configuration.EnableDynamicHikariDatasourceAutoConfiguration
@@ -19,9 +29,32 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  */
 
 @EnableAutoConfiguration
-@RequiredArgsConstructor
+@Configuration
 @EnableConfigurationProperties(DynamicHikariDatasourceProperties.class)
-public class EnableDynamicHikariDatasourceAutoConfiguration {
+@Import(value = {HikariDatasourceCreatorAutoConfig.class, HikariDatasourceAssistAutoConfig.class, HikariDatasourceAspectAutoConfig.class})
+public class EnableDynamicHikariDatasourceAutoConfiguration implements InitializingBean {
 
-    protected DynamicHikariDatasourceProperties properties;
+    protected final DynamicHikariDatasourceProperties properties;
+
+    public EnableDynamicHikariDatasourceAutoConfiguration(DynamicHikariDatasourceProperties properties) {
+        this.properties = properties;
+    }
+
+
+    @Bean
+    @ConditionalOnMissingBean
+    public DataSource dataSource() {
+        DynamicRoutingSwitchDatasource datasource = new DynamicRoutingSwitchDatasource();
+        datasource.setPrimary(properties.getPrimary());
+        datasource.setStrict(properties.getStrict());
+        datasource.setStrategy(properties.getStrategy());
+        datasource.setP6spy(properties.getP6spy());
+        datasource.setSeata(properties.getSeata());
+        return datasource;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+
+    }
 }
