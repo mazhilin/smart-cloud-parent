@@ -1,9 +1,19 @@
 package com.smart.cloud.datasource.hikari.creator;
 
+import com.smart.cloud.boot.utils.ObjectToolsUtil;
+import com.smart.cloud.datasource.boot.config.HikaricpConfig;
+import com.smart.cloud.datasource.boot.constants.DatabasePools;
 import com.smart.cloud.datasource.boot.creator.DatasourceCreator;
 import com.smart.cloud.datasource.boot.properties.DatasourceProperties;
+import com.smart.cloud.datasource.boot.utils.MergeConfigCreator;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.sql.DataSource;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * @className: com.smart.cloud.datasource.hikari.creator.HikariDatasourceCreator
@@ -17,8 +27,39 @@ import javax.sql.DataSource;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
  */
+@NoArgsConstructor
+@AllArgsConstructor
 public class HikariDatasourceCreator implements DatasourceCreator {
+    private static final MergeConfigCreator<HikaricpConfig, HikariConfig> MERGE_CREATOR = new MergeConfigCreator<>("HikariCp", HikaricpConfig.class, HikariConfig.class);
+    private static Method configCopyMethod = null;
 
+    static {
+        fetchMethod();
+    }
+
+    private HikaricpConfig hikaricp;
+
+    /**
+     * to support springboot 1.5 and 2.x
+     * HikariConfig 2.x use 'copyState' to copy config
+     * HikariConfig 3.x use 'copyStateTo' to copy config
+     */
+    @SuppressWarnings("JavaReflectionMemberAccess")
+    private static void fetchMethod() {
+        Class<HikariConfig> hikariConfigClass = HikariConfig.class;
+        try {
+            configCopyMethod = hikariConfigClass.getMethod("copyState", hikariConfigClass);
+            return;
+        } catch (NoSuchMethodException ignored) {
+        }
+
+        try {
+            configCopyMethod = hikariConfigClass.getMethod("copyStateTo", hikariConfigClass);
+            return;
+        } catch (NoSuchMethodException ignored) {
+        }
+        throw new RuntimeException("HikariConfig does not has 'copyState' or 'copyStateTo' method!");
+    }
     /**
      * 通过属性创建数据源
      *
@@ -29,7 +70,26 @@ public class HikariDatasourceCreator implements DatasourceCreator {
      */
     @Override
     public DataSource createDatasource(DatasourceProperties properties) {
-        return null;
+        HikariConfig config = MERGE_CREATOR.create(hikaricp, properties.getHikari());
+        config.setUsername(properties.getUsername());
+        config.setPassword(properties.getPassword());
+        config.setJdbcUrl(properties.getUrl());
+        config.setPoolName(properties.getPoolName());
+        String driverClassName = properties.getDriverClassName();
+        if (ObjectToolsUtil.hasText(driverClassName)) {
+            config.setDriverClassName(driverClassName);
+        }
+        if (Boolean.FALSE.equals(properties.getLazy())) {
+            return new HikariDataSource(config);
+        }
+        config.validate();
+        HikariDataSource dataSource = new HikariDataSource();
+        try {
+            configCopyMethod.invoke(config, dataSource);
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            throw new RuntimeException("HikariConfig failed to copy to HikariDataSource", e);
+        }
+        return dataSource;
     }
 
     /**
@@ -42,6 +102,7 @@ public class HikariDatasourceCreator implements DatasourceCreator {
      */
     @Override
     public boolean support(DatasourceProperties properties) {
-        return false;
+        Class<? extends DataSource> type = properties.getType();
+        return type == null || DatabasePools.HIKARI.equals(type.getName());
     }
 }

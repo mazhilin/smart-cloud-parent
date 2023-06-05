@@ -73,6 +73,14 @@ public class DatasourceProperties {
      */
     private DatasourceInitProperties init = new DatasourceInitProperties();
     /**
+     * Druid参数配置
+     */
+    private DruidConfig druid = new DruidConfig();
+    /**
+     * HikariCp参数配置
+     */
+    private HikaricpConfig hikari = new HikaricpConfig();
+    /**
      * 解密公匙(如果未设置默认使用全局的)
      */
     private String publicKey;
