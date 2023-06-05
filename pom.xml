@@ -125,6 +125,13 @@
                 <artifactId>smart-cloud-common-web</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-datasource-boot</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
             <!--smart-cloud-dubbo依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>

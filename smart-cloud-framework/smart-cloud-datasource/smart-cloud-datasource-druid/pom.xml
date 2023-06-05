@@ -21,6 +21,11 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>com.smart.cloud</groupId>
+            <artifactId>smart-cloud-datasource-boot</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <optional>true</optional>
