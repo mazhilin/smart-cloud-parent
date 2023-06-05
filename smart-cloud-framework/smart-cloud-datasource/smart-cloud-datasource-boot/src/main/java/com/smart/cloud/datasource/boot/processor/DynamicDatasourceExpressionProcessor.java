@@ -66,7 +66,7 @@ public class DynamicDatasourceExpressionProcessor extends DynamicDatasourceProce
     }
 
     @Override
-    public String doDetermineDatasource(MethodInvocation invocation, String key) {
+    public String finalize(MethodInvocation invocation, String key) {
         Method method = invocation.getMethod();
         Object[] arguments = invocation.getArguments();
         ExpressionRootObject rootObject = new ExpressionRootObject(method, arguments, invocation.getThis());

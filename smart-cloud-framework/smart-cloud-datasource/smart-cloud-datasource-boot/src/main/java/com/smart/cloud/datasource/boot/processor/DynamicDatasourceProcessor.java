@@ -40,16 +40,16 @@ public abstract class DynamicDatasourceProcessor {
      * @param key        DS注解里的内容
      * @return 数据源名称
      */
-    public String determineDatasource(MethodInvocation invocation, String key) {
+    public String definite(MethodInvocation invocation, String key) {
         if (matches(key)) {
-            String datasource = doDetermineDatasource(invocation, key);
+            String datasource = finalize(invocation, key);
             if (datasource == null && nextProcessor != null) {
-                return nextProcessor.determineDatasource(invocation, key);
+                return nextProcessor.definite(invocation, key);
             }
             return datasource;
         }
         if (nextProcessor != null) {
-            return nextProcessor.determineDatasource(invocation, key);
+            return nextProcessor.definite(invocation, key);
         }
         return null;
     }
@@ -61,5 +61,5 @@ public abstract class DynamicDatasourceProcessor {
      * @param key        DS注解里的内容
      * @return 数据源名称
      */
-    public abstract String doDetermineDatasource(MethodInvocation invocation, String key);
+    public abstract String finalize(MethodInvocation invocation, String key);
 }
