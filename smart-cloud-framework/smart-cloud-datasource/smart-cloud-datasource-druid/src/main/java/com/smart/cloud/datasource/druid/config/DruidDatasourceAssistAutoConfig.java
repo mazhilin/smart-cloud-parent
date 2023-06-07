@@ -29,7 +29,7 @@ import org.springframework.core.annotation.Order;
 @RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicDruidDatasourceProperties.class)
 public class DruidDatasourceAssistAutoConfig {
-    protected  DynamicDruidDatasourceProperties properties;
+    private final   DynamicDruidDatasourceProperties properties;
 
     @Bean
     @Order(0)

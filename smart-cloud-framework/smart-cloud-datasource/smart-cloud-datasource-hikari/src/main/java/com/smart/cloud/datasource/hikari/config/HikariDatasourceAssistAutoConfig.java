@@ -6,6 +6,7 @@ import com.smart.cloud.datasource.boot.event.EncDatasourceInitializrEvent;
 import com.smart.cloud.datasource.boot.provider.DynamicDatasourceBootProvider;
 import com.smart.cloud.datasource.boot.provider.DynamicDatasourceProvider;
 import com.smart.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -25,10 +26,11 @@ import org.springframework.core.annotation.Order;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Configuration
+@RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicHikariDatasourceProperties.class)
 public class HikariDatasourceAssistAutoConfig {
 
-    protected  DynamicHikariDatasourceProperties properties;
+    private final  DynamicHikariDatasourceProperties properties;
 
     @Bean
     @Order(0)

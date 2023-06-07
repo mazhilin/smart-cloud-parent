@@ -9,6 +9,7 @@ import com.smart.cloud.datasource.boot.processor.DynamicDatasourceProcessor;
 import com.smart.cloud.datasource.boot.processor.DynamicDatasourceSessionProcessor;
 import com.smart.cloud.datasource.boot.properties.DatasourceAopProperties;
 import com.smart.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties;
+import lombok.RequiredArgsConstructor;
 import org.springframework.aop.Advisor;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -33,13 +34,10 @@ import org.springframework.context.expression.BeanFactoryResolver;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Configuration
+@RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicHikariDatasourceProperties.class)
 public class HikariDatasourceAspectAutoConfig {
-    protected DynamicHikariDatasourceProperties properties;
-
-    public HikariDatasourceAspectAutoConfig(DynamicHikariDatasourceProperties properties) {
-        this.properties = properties;
-    }
+    private final DynamicHikariDatasourceProperties properties;
 
 
     @Bean

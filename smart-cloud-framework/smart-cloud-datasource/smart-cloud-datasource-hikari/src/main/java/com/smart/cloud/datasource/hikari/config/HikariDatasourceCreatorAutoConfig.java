@@ -1,8 +1,21 @@
 package com.smart.cloud.datasource.hikari.config;
 
+import com.smart.cloud.datasource.boot.creator.BasicDatasourceCreator;
+import com.smart.cloud.datasource.boot.creator.DatasourceCreator;
+import com.smart.cloud.datasource.boot.creator.DefaultDatasourceCreator;
+import com.smart.cloud.datasource.boot.creator.JndiDatasourceCreator;
+import com.smart.cloud.datasource.hikari.creator.HikariDatasourceCreator;
 import com.smart.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties;
+import com.zaxxer.hikari.HikariDataSource;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
+
+import java.util.List;
 
 /**
  * @className: com.smart.cloud.datasource.hikari.config.HikariDruidDatasourceCreatorAutoConfig
@@ -17,6 +30,43 @@ import org.springframework.context.annotation.Configuration;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Configuration
+@RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicHikariDatasourceProperties.class)
 public class HikariDatasourceCreatorAutoConfig {
+
+    public static final int JNDI_ORDER = 1000;
+
+    public static final int HIKARI_ORDER = 3000;
+
+    public static final int DEFAULT_ORDER = 7000;
+
+    private final  DynamicHikariDatasourceProperties properties;
+
+
+    @Bean
+    @ConditionalOnMissingBean
+    public DefaultDatasourceCreator datasourceCreator(List<DatasourceCreator> creators) {
+        DefaultDatasourceCreator creator = new DefaultDatasourceCreator();
+        creator.setCreators(creators);
+        return creator;
+    }
+
+    @Bean
+    @Order(DEFAULT_ORDER)
+    public BasicDatasourceCreator basicDatasourceCreator() {
+        return new BasicDatasourceCreator();
+    }
+
+    @Bean
+    @Order(JNDI_ORDER)
+    public JndiDatasourceCreator jndiDatasourceCreator() {
+        return new JndiDatasourceCreator();
+    }
+
+    @Bean
+    @Order(HIKARI_ORDER)
+    @ConditionalOnClass(HikariDataSource.class)
+    public HikariDatasourceCreator hikariDatasourceCreator() {
+        return new HikariDatasourceCreator(properties.getPoolConfig());
+    }
 }

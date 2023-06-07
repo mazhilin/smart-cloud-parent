@@ -9,6 +9,7 @@ import com.smart.cloud.datasource.boot.processor.DynamicDatasourceProcessor;
 import com.smart.cloud.datasource.boot.processor.DynamicDatasourceSessionProcessor;
 import com.smart.cloud.datasource.boot.properties.DatasourceAopProperties;
 import com.smart.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties;
+import lombok.RequiredArgsConstructor;
 import org.springframework.aop.Advisor;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -33,15 +34,11 @@ import org.springframework.context.expression.BeanFactoryResolver;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @Configuration
+@RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicDruidDatasourceProperties.class)
 public class DruidDatasourceAspectAutoConfig {
 
-    protected DynamicDruidDatasourceProperties properties;
-
-    public DruidDatasourceAspectAutoConfig(DynamicDruidDatasourceProperties properties) {
-        this.properties = properties;
-    }
-
+    private final DynamicDruidDatasourceProperties properties;
 
     @Bean
     @ConditionalOnMissingBean
