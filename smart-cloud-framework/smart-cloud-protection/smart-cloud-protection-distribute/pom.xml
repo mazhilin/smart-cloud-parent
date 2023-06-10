@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-framework</artifactId>
+        <artifactId>smart-cloud-protection</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-protection</artifactId>
+    <artifactId>smart-cloud-protection-distribute</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-protection</name>
+    <name>smart-cloud-protection-distribute</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -27,14 +26,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-protection-boot</module>
-        <module>smart-cloud-protection-distribute</module>
-        <module>smart-cloud-protection-idempotent</module>
-    </modules>
-
-
 
     <build>
         <plugins>
