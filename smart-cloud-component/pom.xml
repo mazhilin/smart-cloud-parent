@@ -30,9 +30,12 @@
     </dependencies>
 
     <modules>
+        <module>smart-cloud-configure</module>
+        <module>smart-cloud-discovery</module>
         <module>smart-cloud-gateway</module>
+        <module>smart-cloud-governance</module>
+        <module>smart-cloud-management</module>
         <module>smart-cloud-registry</module>
-        <module>smart-cloud-monitor</module>
     </modules>
 
     <build>

@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-datacache</artifactId>
+        <artifactId>smart-cloud-governance</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-datacache-redis</artifactId>
+    <artifactId>smart-cloud-governance-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-datacache-redis</name>
+    <name>smart-cloud-governance-boot</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 

@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-registry</artifactId>
+        <artifactId>smart-cloud-discovery</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-registry-zookeeper</artifactId>
+    <artifactId>smart-cloud-discovery-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-registry-zookeeper</name>
+    <name>smart-cloud-discovery-boot</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,6 +26,13 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

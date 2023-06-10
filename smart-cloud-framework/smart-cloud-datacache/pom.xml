@@ -29,7 +29,8 @@
 
     <modules>
         <module>smart-cloud-datacache-boot</module>
-        <module>smart-cloud-datacache-redis</module>
+        <module>smart-cloud-datacache-j2cache</module>
+        <module>smart-cloud-datacache-jetcache</module>
     </modules>
 
     <build>

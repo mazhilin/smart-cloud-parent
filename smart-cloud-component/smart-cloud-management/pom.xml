@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-monitor</artifactId>
+        <artifactId>smart-cloud-component</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-monitor-boot</artifactId>
+    <artifactId>smart-cloud-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-monitor-boot</name>
+    <name>smart-cloud-management</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
@@ -26,6 +26,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <modules>
+        <module>smart-cloud-management-boot</module>
+        <module>smart-cloud-management-console</module>
+        <module>smart-cloud-management-metrics</module>
+        <module>smart-cloud-management-monitor</module>
+    </modules>
 
     <build>
         <plugins>

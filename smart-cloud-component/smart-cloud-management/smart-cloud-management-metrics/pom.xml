@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-gateway</artifactId>
+        <artifactId>smart-cloud-management</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-gateway-gravitee</artifactId>
+    <artifactId>smart-cloud-management-metrics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-gateway-gravitee</name>
+    <name>smart-cloud-management-metrics</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

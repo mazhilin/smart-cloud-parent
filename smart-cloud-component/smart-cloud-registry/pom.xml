@@ -33,7 +33,6 @@
         <module>smart-cloud-registry-boot</module>
         <module>smart-cloud-registry-eureka</module>
         <module>smart-cloud-registry-nacos</module>
-        <module>smart-cloud-registry-zookeeper</module>
     </modules>
 
 </project>

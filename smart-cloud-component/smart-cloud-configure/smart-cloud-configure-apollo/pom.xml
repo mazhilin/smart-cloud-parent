@@ -4,15 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-component</artifactId>
+        <artifactId>smart-cloud-configure</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-monitor</artifactId>
+    <artifactId>smart-cloud-configure-apollo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-monitor</name>
+    <name>smart-cloud-configure-apollo</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+
 
     <dependencies>
         <dependency>
@@ -26,10 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-monitor-boot</module>
-    </modules>
 
     <build>
         <plugins>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
@@ -10,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-gateway</artifactId>
+    <artifactId>smart-cloud-discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-gateway</name>
+    <name>smart-cloud-discovery</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
@@ -30,9 +28,9 @@
     </dependencies>
 
     <modules>
-        <module>smart-cloud-gateway-boot</module>
-        <module>smart-cloud-gateway-spring</module>
-        <module>smart-cloud-gateway-zuul</module>
+        <module>smart-cloud-discovery-boot</module>
+        <module>smart-cloud-discovery-eureka</module>
+        <module>smart-cloud-discovery-nacos</module>
     </modules>
 
     <build>
