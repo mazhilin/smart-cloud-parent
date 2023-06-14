@@ -4,17 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-parent</artifactId>
+        <artifactId>smart-cloud-margin</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-component</artifactId>
+    <artifactId>smart-cloud-margin-nacos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-component</name>
+    <name>smart-cloud-margin-nacos</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -28,16 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-configure</module>
-        <module>smart-cloud-discovery</module>
-        <module>smart-cloud-gateway</module>
-        <module>smart-cloud-governance</module>
-        <module>smart-cloud-management</module>
-        <module>smart-cloud-margin</module>
-        <module>smart-cloud-registry</module>
-    </modules>
 
     <build>
         <plugins>
