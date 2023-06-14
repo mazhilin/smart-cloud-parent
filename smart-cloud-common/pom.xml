@@ -32,6 +32,7 @@
     <modules>
         <module>smart-cloud-common-api</module>
         <module>smart-cloud-common-base</module>
+        <module>smart-cloud-common-boot</module>
         <module>smart-cloud-common-center</module>
         <module>smart-cloud-common-domain</module>
         <module>smart-cloud-common-web</module>
