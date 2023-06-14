@@ -4,15 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-middleware</artifactId>
+        <artifactId>smart-cloud-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-dubbo</artifactId>
+    <artifactId>smart-cloud-common-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-dubbo</name>
+    <name>smart-cloud-common-boot</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -25,12 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>smart-cloud-dubbo-boot</module>
-        <module>smart-cloud-dubbo-provider</module>
-        <module>smart-cloud-dubbo-consumer</module>
-    </modules>
 
     <build>
         <plugins>
