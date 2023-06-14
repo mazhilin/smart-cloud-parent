@@ -4,17 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-margin</artifactId>
+        <artifactId>smart-cloud-component</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-margin-nacos</artifactId>
+    <artifactId>smart-cloud-miscellane</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-margin-nacos</name>
+    <name>smart-cloud-miscellane</name>
     <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>17</java.version>
-    </properties>
+    <packaging>pom</packaging>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,6 +25,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <modules>
+        <module>smart-cloud-miscellane-boot</module>
+        <module>smart-cloud-miscellane-eureka</module>
+        <module>smart-cloud-miscellane-nacos</module>
+    </modules>
 
     <build>
         <plugins>

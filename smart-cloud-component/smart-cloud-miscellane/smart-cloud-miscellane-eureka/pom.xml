@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.smart.cloud</groupId>
-        <artifactId>smart-cloud-margin</artifactId>
+        <artifactId>smart-cloud-miscellane</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-margin-boot</artifactId>
+    <artifactId>smart-cloud-miscellane-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-margin-boot</name>
+    <name>smart-cloud-miscellane-eureka</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>

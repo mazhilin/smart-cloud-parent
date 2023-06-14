@@ -35,7 +35,7 @@
         <module>smart-cloud-gateway</module>
         <module>smart-cloud-governance</module>
         <module>smart-cloud-management</module>
-        <module>smart-cloud-margin</module>
+        <module>smart-cloud-miscellane</module>
         <module>smart-cloud-registry</module>
     </modules>
 
