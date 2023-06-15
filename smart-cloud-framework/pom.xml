@@ -35,7 +35,6 @@
         <module>smart-cloud-datacache</module>
         <module>smart-cloud-datasource</module>
         <module>smart-cloud-persistence</module>
-        <module>smart-cloud-protection</module>
         <module>smart-cloud-scheduled</module>
         <module>smart-cloud-specification</module>
         <module>smart-cloud-storage</module>
