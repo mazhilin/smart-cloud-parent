@@ -132,6 +132,18 @@
                 <version>${smart-cloud.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-datasource-hikari</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.smart.cloud</groupId>
+                <artifactId>smart-cloud-datasource-druid</artifactId>
+                <version>${smart-cloud.version}</version>
+            </dependency>
+
             <!--smart-cloud-dubbo依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
@@ -144,6 +156,7 @@
                 <artifactId>smart-cloud-dubbo-provider</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.smart.cloud</groupId>
                 <artifactId>smart-cloud-dubbo-consumer</artifactId>
