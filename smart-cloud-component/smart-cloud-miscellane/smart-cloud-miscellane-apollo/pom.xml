@@ -8,11 +8,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-miscellane-boot</artifactId>
+    <artifactId>smart-cloud-miscellane-apollo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-miscellane-boot</name>
+    <name>smart-cloud-miscellane-apollo</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

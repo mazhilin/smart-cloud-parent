@@ -28,6 +28,7 @@
 
     <modules>
         <module>smart-cloud-miscellane-boot</module>
+        <module>smart-cloud-miscellane-apollo</module>
         <module>smart-cloud-miscellane-eureka</module>
         <module>smart-cloud-miscellane-nacos</module>
     </modules>
