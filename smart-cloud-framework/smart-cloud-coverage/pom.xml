@@ -32,6 +32,7 @@
         <module>smart-cloud-coverage-audit</module>
         <module>smart-cloud-coverage-feign</module>
         <module>smart-cloud-coverage-logger</module>
+        <module>smart-cloud-coverage-protect</module>
         <module>smart-cloud-coverage-socket</module>
     </modules>
 

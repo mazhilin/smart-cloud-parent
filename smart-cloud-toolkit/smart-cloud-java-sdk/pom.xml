@@ -33,7 +33,6 @@
         <module>smart-cloud-java-sdk-boot</module>
         <module>smart-cloud-java-sdk-core</module>
         <module>smart-cloud-java-sdk-data</module>
-        <module>smart-cloud-java-sdk-metrics</module>
     </modules>
 
 
