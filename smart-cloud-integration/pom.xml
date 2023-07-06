@@ -43,14 +43,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <modules>
-        <module>smart-cloud-authorization</module>
-        <module>smart-cloud-authentication</module>
-        <module>smart-cloud-identification</module>
-        <module>smart-cloud-permission</module>
-        <module>smart-cloud-resources</module>
-    </modules>
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
