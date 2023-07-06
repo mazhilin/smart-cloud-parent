@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.smart.cloud</groupId>
-    <artifactId>smart-cloud-persistence-datajpa</artifactId>
+    <artifactId>smart-cloud-persistence-hibernate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-cloud-persistence-datajpa</name>
+    <name>smart-cloud-persistence-hibernate</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 
