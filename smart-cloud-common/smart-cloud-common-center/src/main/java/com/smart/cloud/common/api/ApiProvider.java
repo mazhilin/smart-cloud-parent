@@ -1,7 +1,7 @@
-package com.smart.cloud.common.api.userinterface;
+package com.smart.cloud.common.api;
 
 /**
- * @className: com.smart.cloud.common.api.userinterface.ApiProvider
+ * @className: com.smart.cloud.common.api.provider.ApiProvider
  * @projectName: 封装SmartCloud项目-ApiProvider类
  * @module: SmartCloud项目-ApiProvider类，主要位于ApiProvider模块的业务场景
  * @content: ApiProvider类，主要用于完成ApiProvider的封装和定义.

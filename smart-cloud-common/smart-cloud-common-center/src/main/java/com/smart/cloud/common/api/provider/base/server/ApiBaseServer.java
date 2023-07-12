@@ -1,6 +1,7 @@
-package com.smart.cloud.common.api.application.server;
+package com.smart.cloud.common.api.provider.base.server;
 
-import com.smart.cloud.common.api.base.server.ApiServer;
+
+import com.smart.cloud.common.api.provider.ApiServerProvider;
 
 /**
  * @className: com.smart.cloud.common.api.application.server.BaseApiServer
@@ -12,5 +13,5 @@ import com.smart.cloud.common.api.base.server.ApiServer;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class ApiBaseServer implements ApiServer {
+public class ApiBaseServer implements ApiServerProvider {
 }

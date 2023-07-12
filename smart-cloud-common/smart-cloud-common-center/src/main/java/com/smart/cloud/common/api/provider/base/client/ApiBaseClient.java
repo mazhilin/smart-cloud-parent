@@ -1,6 +1,7 @@
-package com.smart.cloud.common.api.application.client;
+package com.smart.cloud.common.api.provider.base.client;
 
-import com.smart.cloud.common.api.base.client.ApiClient;
+
+import com.smart.cloud.common.api.provider.ApiClientProvider;
 
 /**
  * @className: com.smart.cloud.common.api.application.client.BaseApiClient
@@ -12,5 +13,5 @@ import com.smart.cloud.common.api.base.client.ApiClient;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class ApiBaseClient implements ApiClient {
+public class ApiBaseClient implements ApiClientProvider {
 }
