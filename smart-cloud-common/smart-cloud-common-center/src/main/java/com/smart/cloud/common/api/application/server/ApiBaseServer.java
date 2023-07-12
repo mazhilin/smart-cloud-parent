@@ -12,5 +12,5 @@ import com.smart.cloud.common.api.base.server.ApiServer;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class BaseApiServer implements ApiServer {
+public class ApiBaseServer implements ApiServer {
 }
