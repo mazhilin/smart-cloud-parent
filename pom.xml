@@ -93,11 +93,6 @@
                 <artifactId>smart-cloud-boot</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-nacos</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
 
             <!--smart-cloud-common依赖配置-->
             <dependency>

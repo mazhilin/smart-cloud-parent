@@ -13,25 +13,34 @@
     <name>smart-cloud-common-center</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-    <dependencies>
 
+    <dependencies>
         <!--jdbc-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-
         <!--jpa-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.smart.cloud</groupId>
             <artifactId>smart-cloud-common-api</artifactId>
         </dependency>
+        <!--datasource-->
+        <dependency>
+            <groupId>com.smart.cloud</groupId>
+            <artifactId>smart-cloud-datasource-hikari</artifactId>
+            <version>${smart-cloud.version}</version>
+        </dependency>
+        <!--Dubbo-->
+        <dependency>
+            <groupId>com.smart.cloud</groupId>
+            <artifactId>smart-cloud-dubbo-provider</artifactId>
+            <version>${smart-cloud.version}</version>
+        </dependency>
     </dependencies>
-
 
 </project>
