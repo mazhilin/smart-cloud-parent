@@ -1,7 +1,5 @@
 package com.smart.cloud.common.api.userinterface.provider;
 
-import com.smart.cloud.common.api.userinterface.ApiProvider;
-
 /**
  * @className: com.smart.cloud.common.api.userinterface.provider.BaseApiProvider
  * @projectName: 封装SmartCloud项目-BaseApiProvider类
@@ -12,5 +10,5 @@ import com.smart.cloud.common.api.userinterface.ApiProvider;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class ApiBaseProvider implements ApiProvider {
+public class ApiBaseProvider {
 }
