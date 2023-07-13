@@ -1,6 +1,6 @@
 package com.smart.cloud.common.domain;
 
-import com.smart.cloud.boot.Serializer;
+import java.io.Serializable;
 
 /**
  * @className: com.smart.cloud.common.domain.Entity
@@ -14,5 +14,5 @@ import com.smart.cloud.boot.Serializer;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public interface Entity extends Serializer {
+public interface Entity extends Serializable {
 }

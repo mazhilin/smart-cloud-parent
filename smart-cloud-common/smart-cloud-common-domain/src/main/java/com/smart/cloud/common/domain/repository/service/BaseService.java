@@ -1,5 +1,6 @@
 package com.smart.cloud.common.domain.repository.service;
 
+
 import com.smart.cloud.common.domain.Service;
 
 /**
@@ -14,7 +15,7 @@ import com.smart.cloud.common.domain.Service;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public interface BaseService<T,ID>  extends Service<T>{
+public interface BaseService<T,ID>  extends Service<T> {
 
     /**
      * 查询详情-detail
