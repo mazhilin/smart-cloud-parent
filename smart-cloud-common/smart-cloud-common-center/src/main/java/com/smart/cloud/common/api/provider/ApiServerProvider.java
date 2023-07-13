@@ -1,7 +1,7 @@
 package com.smart.cloud.common.api.provider;
 
 import com.smart.cloud.common.api.ApiProvider;
-import com.smart.cloud.common.api.base.server.ApiServer;
+import com.smart.cloud.common.api.service.server.ApiServer;
 
 /**
  * @className: com.smart.cloud.common.api.provider.ApiServerProvider
