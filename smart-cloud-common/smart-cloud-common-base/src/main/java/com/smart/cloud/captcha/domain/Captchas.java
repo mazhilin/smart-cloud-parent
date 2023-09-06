@@ -1,4 +1,4 @@
-package com.smart.cloud.captcha;
+package com.smart.cloud.captcha.domain;
 
 /**
  * @className: com.smart.cloud.common.captcha.Captchas

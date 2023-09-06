@@ -1,4 +1,4 @@
-package com.smart.cloud.captcha;
+package com.smart.cloud.captcha.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
