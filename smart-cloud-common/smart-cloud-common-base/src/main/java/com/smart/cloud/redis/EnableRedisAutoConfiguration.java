@@ -1,4 +1,4 @@
-package com.smart.cloud.redis.config;
+package com.smart.cloud.redis;
 
 import com.smart.cloud.redis.properties.RedisConfigProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @className: com.smart.cloud.redis.config.EnableRedisAutoConfiguration
+ * @className: com.smart.cloud.redis.EnableRedisAutoConfiguration
  * @projectName: 封装SmartCloud项目-EnableRedisAutoConfiguration类
  * @module: SmartCloud项目-EnableRedisAutoConfiguration类，主要位于EnableRedisAutoConfiguration模块的业务场景
  * @content: EnableRedisAutoConfiguration类，主要用于完成EnableRedisAutoConfiguration的封装和定义.

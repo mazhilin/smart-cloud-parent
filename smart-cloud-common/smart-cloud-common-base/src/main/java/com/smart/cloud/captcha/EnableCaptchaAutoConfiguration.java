@@ -1,4 +1,4 @@
-package com.smart.cloud.captcha.config;
+package com.smart.cloud.captcha;
 
 import com.smart.cloud.captcha.properties.CaptchaProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
