@@ -1,11 +1,11 @@
-package com.smart.cloud.common.appliance.captcha.properties;
+package com.smart.cloud.captcha.properties;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @className: com.smart.cloud.common.appliance.captcha.properties.CaptchaProperties
+ * @className: com.smart.cloud.common.captcha.properties.CaptchaProperties
  * @projectName: 封装SmartCloud项目-CaptchaProperties类
  * @module: SmartCloud项目-CaptchaProperties类，主要位于CaptchaProperties模块的业务场景
  * @content: CaptchaProperties类，主要用于完成CaptchaProperties的封装和定义.
@@ -15,9 +15,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 
-@ConfigurationProperties(prefix = CaptchaProperties.PREFIX)
 @Setter
 @Getter
+@ConfigurationProperties(prefix = CaptchaProperties.PREFIX)
 public class CaptchaProperties {
 
     public static final String PREFIX = "smart.cloud.captcha";

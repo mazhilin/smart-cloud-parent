@@ -1,4 +1,4 @@
-package com.smart.cloud.common.appliance.captcha;
+package com.smart.cloud.captcha;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @className: com.smart.cloud.common.appliance.captcha.Captcha
+ * @className: com.smart.cloud.common.captcha.Captcha
  * @projectName: 封装SmartCloud项目-Captcha类
  * @module: SmartCloud项目-Captcha类，主要位于Captcha模块的业务场景
  * @content: Captcha类，主要用于完成Captcha的封装和定义.

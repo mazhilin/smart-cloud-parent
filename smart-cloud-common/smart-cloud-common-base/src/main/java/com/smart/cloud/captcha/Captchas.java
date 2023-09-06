@@ -1,7 +1,7 @@
-package com.smart.cloud.common.appliance.captcha;
+package com.smart.cloud.captcha;
 
 /**
- * @className: com.smart.cloud.common.appliance.captcha.Captchas
+ * @className: com.smart.cloud.common.captcha.Captchas
  * @projectName: 封装SmartCloud项目-Captchas类
  * @module: SmartCloud项目-Captchas类，主要位于Captchas模块的业务场景
  * @content: Captchas类，主要用于完成Captchas的封装和定义.
