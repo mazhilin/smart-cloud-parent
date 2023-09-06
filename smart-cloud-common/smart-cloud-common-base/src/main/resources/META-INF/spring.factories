@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.smart.cloud.captcha.EnableCaptchaAutoConfiguration,\
-  com.smart.cloud.redis.EnableRedisAutoConfiguration
+  com.smart.cloud.redis.EnableRedisAutoConfiguration,\
+  com.smart.cloud.platform.EnablePlatformAutoConfiguration
