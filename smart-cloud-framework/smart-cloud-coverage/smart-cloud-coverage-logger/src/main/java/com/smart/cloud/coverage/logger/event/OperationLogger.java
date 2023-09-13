@@ -1,5 +1,7 @@
 package com.smart.cloud.coverage.logger.event;
 
+import java.io.Serializable;
+
 /**
  * @className: com.smart.cloud.coverage.logger.event.OperationLogger
  * @projectName: 封装SmartCloud项目-OperationLogger类
@@ -10,5 +12,7 @@ package com.smart.cloud.coverage.logger.event;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class OperationLogger {
+public class OperationLogger  implements Serializable {
+
+    private static final long serialVersionUID = 2240977859420623057L;
 }

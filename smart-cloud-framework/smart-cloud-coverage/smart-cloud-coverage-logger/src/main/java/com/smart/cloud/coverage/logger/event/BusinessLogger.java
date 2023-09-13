@@ -1,5 +1,7 @@
 package com.smart.cloud.coverage.logger.event;
 
+import java.io.Serializable;
+
 /**
  * @className: com.smart.cloud.coverage.logger.event.BusinessLogger
  * @projectName: 封装SmartCloud项目-BusinessLogger类
@@ -10,5 +12,7 @@ package com.smart.cloud.coverage.logger.event;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
-public class BusinessLogger {
+public class BusinessLogger  implements Serializable {
+
+    private static final long serialVersionUID = 7593748666168644280L;
 }
