@@ -1,6 +1,9 @@
 package com.smart.cloud.coverage.logger.listener;
 
 import com.smart.cloud.coverage.logger.event.ApplicationLoggerEvent;
+import org.springframework.context.event.EventListener;
+import org.springframework.core.annotation.Order;
+import org.springframework.scheduling.annotation.Async;
 
 /**
  * @className: com.smart.cloud.coverage.logger.listener.ExceptionLoggerListener
@@ -20,6 +23,9 @@ public class ExceptionLoggerListener implements ApplicationLoggerListener {
      * @param event
      *         日志时间对象
      */
+    @Async
+    @Order
+    @EventListener(ApplicationLoggerEvent.class)
     @Override
     public void storageLogger(ApplicationLoggerEvent event) {
 

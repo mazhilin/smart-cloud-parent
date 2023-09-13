@@ -1,9 +1,12 @@
 package com.smart.cloud.coverage.logger.configuration;
 
+import com.smart.cloud.coverage.logger.aspect.ApplicationLoggerAspect;
 import com.smart.cloud.coverage.logger.listener.*;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * @className: com.smart.cloud.coverage.logger.configuration.EnableLoggerAutoConfiguration
@@ -15,10 +18,11 @@ import org.springframework.context.annotation.Configuration;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
+@EnableAsync
 @Configuration
 @ComponentScan(basePackages = "com.smart.cloud.coverage.logger.*")
+@ConditionalOnWebApplication
 public class EnableLoggerAutoConfiguration {
-
 
     @Bean(name = "behaviorLoggerListener")
     public ApplicationLoggerListener behaviorLoggerListener(){
@@ -43,5 +47,10 @@ public class EnableLoggerAutoConfiguration {
     @Bean(name = "operationLoggerListener")
     public ApplicationLoggerListener operationLoggerListener(){
         return new OperationLoggerListener();
+    }
+
+    @Bean
+    public ApplicationLoggerAspect applicationLoggerAspect(){
+        return new ApplicationLoggerAspect();
     }
 }
