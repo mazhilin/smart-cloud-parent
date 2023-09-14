@@ -1,6 +1,7 @@
 package com.smart.cloud.coverage.logger.listener;
 
 import com.smart.cloud.coverage.logger.event.ApplicationLoggerEvent;
+import com.smart.cloud.coverage.logger.event.BehaviorLogger;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.Async;
@@ -27,6 +28,6 @@ public class BehaviorLoggerListener implements ApplicationLoggerListener{
     @EventListener(ApplicationLoggerEvent.class)
     @Override
     public void storageLogger(ApplicationLoggerEvent event) {
-
+        BehaviorLogger behavior = event.getBehaviorLogger();
     }
 }

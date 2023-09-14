@@ -1,5 +1,7 @@
 package com.smart.cloud.coverage.logger.annotation;
 
+import java.lang.annotation.*;
+
 /**
  * @className: com.smart.cloud.coverage.logger.annotation.ApplicationLogger
  * @projectName: 封装SmartCloud项目-ApplicationLogger类
@@ -10,5 +12,11 @@ package com.smart.cloud.coverage.logger.annotation;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
 public @interface ApplicationLogger {
 }
+
+
