@@ -8,7 +8,7 @@ import lombok.*;
 import java.util.Date;
 
 /**
- * @className: com.smart.cloud.common.domain.base.request.BaseRequest
+ * @className: com.smart.cloud.common.repository.base.request.BaseRequest
  * @title: 封装SmartCloud项目-BaseRequest类
  * @description: <p>
  *         SmartCloud项目-BaseRequest

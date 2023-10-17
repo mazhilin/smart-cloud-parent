@@ -21,7 +21,7 @@ public final class  DubboConstant {
     /**
      * 统一字符编码-utf-8
      */
-    public static final String UNIFIED_CONTEXT = "/panda-cloud";
+    public static final String UNIFIED_CONTEXT = "/smart-cloud";
 
     /**
      * 统一字符编码-utf-8

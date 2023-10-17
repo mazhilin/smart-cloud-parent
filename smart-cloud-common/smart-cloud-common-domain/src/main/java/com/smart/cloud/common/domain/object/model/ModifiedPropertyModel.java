@@ -4,7 +4,7 @@ import com.smart.cloud.common.domain.Model;
 import lombok.Data;
 
 /**
- * @className: com.smart.cloud.common.domain.base.model.ModifiedPropertyModel
+ * @className: com.smart.cloud.common.repository.base.model.ModifiedPropertyModel
  * @title: 封装SmartCloud项目-ModifiedPropertyModel类
  * @description: <p>
  *         SmartCloud项目-ModifiedPropertyModel

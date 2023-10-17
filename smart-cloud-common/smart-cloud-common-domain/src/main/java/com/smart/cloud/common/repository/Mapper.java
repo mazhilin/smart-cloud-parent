@@ -1,9 +1,9 @@
-package com.smart.cloud.common.domain;
+package com.smart.cloud.common.repository;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @className: com.smart.cloud.common.domain.Mapper
+ * @className: com.smart.cloud.common.repository.Mapper
  * @title: 封装SmartCloud项目-Mapper类
  * @description: <p>
  *         SmartCloud项目-Mapper

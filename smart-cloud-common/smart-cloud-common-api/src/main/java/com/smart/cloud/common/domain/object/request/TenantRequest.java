@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 /**
- * @className: com.smart.cloud.common.domain.base.request.TenantRequest
+ * @className: com.smart.cloud.common.repository.base.request.TenantRequest
  * @title: 封装SmartCloud项目-TenantRequest类
  * @description: <p>
  *         SmartCloud项目-TenantRequest

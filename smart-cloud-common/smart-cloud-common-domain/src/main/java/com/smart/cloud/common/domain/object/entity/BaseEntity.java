@@ -13,7 +13,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 /**
- * @className: com.smart.cloud.common.domain.base.entity.BaseEntity
+ * @className: com.smart.cloud.common.repository.base.entity.BaseEntity
  * @title: 封装SmartCloud项目-BaseEntity类
  * @description: <p>
  *         SmartCloud项目-BaseEntity

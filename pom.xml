@@ -161,7 +161,7 @@
             <!--smart-cloud-kafka依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-kafka-common</artifactId>
+                <artifactId>smart-cloud-kafka-boot</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
 
@@ -179,7 +179,7 @@
             <!--smart-cloud-redismq依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redismq-common</artifactId>
+                <artifactId>smart-cloud-redismq-boot</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
 
@@ -197,7 +197,7 @@
             <!--smart-cloud-rocketmq依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-rocketmq-common</artifactId>
+                <artifactId>smart-cloud-rocketmq-boot</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
 
@@ -215,7 +215,7 @@
             <!--smart-cloud-pulsar依赖配置-->
             <dependency>
                 <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-pulsar-common</artifactId>
+                <artifactId>smart-cloud-pulsar-boot</artifactId>
                 <version>${smart-cloud.version}</version>
             </dependency>
 

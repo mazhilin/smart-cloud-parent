@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
- * @className: com.smart.cloud.common.domain.base.request.QueryRequest
+ * @className: com.smart.cloud.common.repository.base.request.QueryRequest
  * @title: 封装SamrtCloud项目-QueryRequest类
  * @description: <p>
  *         SamrtCloud项目-QueryRequest

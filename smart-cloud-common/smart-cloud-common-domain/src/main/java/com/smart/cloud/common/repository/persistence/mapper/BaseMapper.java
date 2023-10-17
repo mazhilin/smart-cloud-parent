@@ -1,7 +1,7 @@
-package com.smart.cloud.common.domain.repository.mapper;
+package com.smart.cloud.common.repository.persistence.mapper;
 
 
-import com.smart.cloud.common.domain.Mapper;
+import com.smart.cloud.common.repository.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

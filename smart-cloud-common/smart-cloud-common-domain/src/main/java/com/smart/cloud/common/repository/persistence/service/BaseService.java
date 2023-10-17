@@ -1,7 +1,7 @@
-package com.smart.cloud.common.domain.repository.service;
+package com.smart.cloud.common.repository.persistence.service;
 
 
-import com.smart.cloud.common.domain.Service;
+import com.smart.cloud.common.repository.Service;
 
 /**
  * @className: com.smart.cloud.common.dao.base.service.BaseService

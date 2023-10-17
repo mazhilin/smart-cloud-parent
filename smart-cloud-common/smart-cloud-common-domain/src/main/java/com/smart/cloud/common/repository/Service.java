@@ -1,9 +1,9 @@
-package com.smart.cloud.common.domain;
+package com.smart.cloud.common.repository;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * @className: com.smart.cloud.common.domain.Service
+ * @className: com.smart.cloud.common.repository.Service
  * @title: 封装SmartCloud项目-Service类
  * @description: <p>
  *         SmartCloud项目-Service

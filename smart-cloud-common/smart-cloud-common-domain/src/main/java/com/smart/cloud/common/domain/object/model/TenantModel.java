@@ -6,7 +6,7 @@ import lombok.experimental.Accessors;
 import java.util.Date;
 
 /**
- * @className: com.smart.cloud.common.domain.base.model.TenantModel
+ * @className: com.smart.cloud.common.repository.base.model.TenantModel
  * @title: 封装SmartCloud项目-TenantModel类
  * @description: <p>
  *         SmartCloud项目-TenantModel

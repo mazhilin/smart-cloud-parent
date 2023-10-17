@@ -6,7 +6,7 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 /**
- * @className: com.smart.cloud.common.domain.base.entity.TenantEntity
+ * @className: com.smart.cloud.common.repository.base.entity.TenantEntity
  * @title: 封装SmartCloud项目-TenantEntity类
  * @description: <p>
  *         SmartCloud项目-TenantEntity

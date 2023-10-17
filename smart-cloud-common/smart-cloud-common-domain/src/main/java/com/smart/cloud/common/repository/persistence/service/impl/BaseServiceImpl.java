@@ -1,10 +1,10 @@
-package com.smart.cloud.common.domain.repository.service.impl;
+package com.smart.cloud.common.repository.persistence.service.impl;
 
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.smart.cloud.boot.extension.AppRuntimeEnvironment;
-import com.smart.cloud.common.domain.repository.mapper.BaseMapper;
-import com.smart.cloud.common.domain.repository.service.BaseService;
+import com.smart.cloud.common.repository.persistence.mapper.BaseMapper;
+import com.smart.cloud.common.repository.persistence.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

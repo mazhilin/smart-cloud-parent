@@ -6,7 +6,7 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 /**
- * @className: com.smart.cloud.common.domain.base.model.BaseModel
+ * @className: com.smart.cloud.common.repository.base.model.BaseModel
  * @title: 封装SmartCloud项目-BaseModel类
  * @description: <p>
  *         SmartCloud项目-BaseModel
