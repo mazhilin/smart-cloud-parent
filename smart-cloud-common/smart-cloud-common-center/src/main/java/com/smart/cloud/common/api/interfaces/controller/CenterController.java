@@ -1,4 +1,4 @@
-package com.smart.cloud.common.api.userinterface.controller;
+package com.smart.cloud.common.api.interfaces.controller;
 
 /**
  * @className: com.smart.cloud.common.api.userinterface.controller.CenterController

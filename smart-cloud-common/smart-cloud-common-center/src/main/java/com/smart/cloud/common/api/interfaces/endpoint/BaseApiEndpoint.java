@@ -1,4 +1,4 @@
-package com.smart.cloud.common.api.userinterface.endpoint;
+package com.smart.cloud.common.api.interfaces.endpoint;
 
 /**
  * @className: com.smart.cloud.common.api.userinterface.endpoint.BaseApiEndpoint
