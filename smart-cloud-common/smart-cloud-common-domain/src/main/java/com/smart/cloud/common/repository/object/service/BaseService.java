@@ -1,4 +1,4 @@
-package com.smart.cloud.common.repository.persistence.service;
+package com.smart.cloud.common.repository.object.service;
 
 
 import com.smart.cloud.common.repository.Service;

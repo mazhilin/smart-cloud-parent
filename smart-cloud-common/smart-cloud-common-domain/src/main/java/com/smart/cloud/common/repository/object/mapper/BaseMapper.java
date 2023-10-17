@@ -1,4 +1,4 @@
-package com.smart.cloud.common.repository.persistence.mapper;
+package com.smart.cloud.common.repository.object.mapper;
 
 
 import com.smart.cloud.common.repository.Mapper;
