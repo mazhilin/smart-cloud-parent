@@ -13,7 +13,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
  */
 @ConfigurationProperties(prefix = RedisConfigProperties.PREFIX)
-public class RedisConfigProperties {
+public class   RedisConfigProperties {
 
     public static final String PREFIX = "smart.cloud.redis";
 }
